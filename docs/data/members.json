@@ -1,0 +1,552 @@
+[
+  {
+    "id": "adachi-takashi",
+    "name": "安達 卓是",
+    "kana": "あだち たかし",
+    "kaiha": "信風",
+    "term_count": 3,
+    "positions": [],
+    "committees": [
+      {
+        "name": "総務政策",
+        "role": "副委員長",
+        "type": "常任"
+      },
+      {
+        "name": "基地問題等調査特別",
+        "role": "副委員長",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407adati1.jpg"
+  },
+  {
+    "id": "itou-hiroe",
+    "name": "伊藤 ひろえ",
+    "kana": "いとう ひろえ",
+    "kaiha": "信風",
+    "term_count": 6,
+    "positions": [],
+    "committees": [
+      {
+        "name": "民生教育",
+        "role": "委員",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407itou2.jpg"
+  },
+  {
+    "id": "inata-kiyoshi",
+    "name": "稲田 清",
+    "kana": "いなた きよし",
+    "kaiha": "無所属",
+    "term_count": 4,
+    "positions": [],
+    "committees": [
+      {
+        "name": "都市経済",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "原子力発電・エネルギー問題等調査特別",
+        "role": "委員長",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407inata3.jpg"
+  },
+  {
+    "id": "imashiro-masako",
+    "name": "今城 雅子",
+    "kana": "いましろ まさこ",
+    "kaiha": "公明党議員団",
+    "term_count": 3,
+    "positions": [],
+    "committees": [
+      {
+        "name": "議会運営",
+        "role": "副委員長",
+        "type": "議会運営"
+      },
+      {
+        "name": "都市経済",
+        "role": "委員",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407imasiro4.jpg"
+  },
+  {
+    "id": "iwasaki-yasurou",
+    "name": "岩﨑 康朗",
+    "kana": "いわさき やすろう",
+    "kaiha": "自由創政",
+    "term_count": 6,
+    "positions": [],
+    "committees": [
+      {
+        "name": "議会運営",
+        "role": "委員",
+        "type": "議会運営"
+      },
+      {
+        "name": "総務政策",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "基地問題等調査特別",
+        "role": "委員長",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407iwasaki5.jpg"
+  },
+  {
+    "id": "ooshita-tetsuji",
+    "name": "大下 哲治",
+    "kana": "おおした てつじ",
+    "kaiha": "信風",
+    "term_count": 1,
+    "positions": [],
+    "committees": [
+      {
+        "name": "総務政策",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "予算決算",
+        "role": "副委員長",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407oshita6.jpg"
+  },
+  {
+    "id": "okada-keisuke",
+    "name": "岡田 啓介",
+    "kana": "おかだ けいすけ",
+    "kaiha": "自由創政",
+    "term_count": 3,
+    "positions": [
+      "議長"
+    ],
+    "committees": [
+      {
+        "name": "民生教育",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "原子力発電・エネルギー問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407okada7.jpg"
+  },
+  {
+    "id": "okuiwa-hiroki",
+    "name": "奥岩 浩基",
+    "kana": "おくいわ ひろき",
+    "kaiha": "無所属",
+    "term_count": 2,
+    "positions": [],
+    "committees": [
+      {
+        "name": "議会運営",
+        "role": "委員",
+        "type": "議会運営"
+      },
+      {
+        "name": "総務政策",
+        "role": "委員",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407okuiwa8.jpg"
+  },
+  {
+    "id": "kadowaki-kazuo",
+    "name": "門脇 一男",
+    "kana": "かどわき かずお",
+    "kaiha": "無所属",
+    "term_count": 3,
+    "positions": [],
+    "committees": [
+      {
+        "name": "民生教育",
+        "role": "副委員長",
+        "type": "常任"
+      },
+      {
+        "name": "基地問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407kadowaki9.jpg"
+  },
+  {
+    "id": "kunitou-yasushi",
+    "name": "国頭 靖",
+    "kana": "くにとう やすし",
+    "kaiha": "よなご・未来",
+    "term_count": 4,
+    "positions": [],
+    "committees": [
+      {
+        "name": "議会運営",
+        "role": "委員",
+        "type": "議会運営"
+      },
+      {
+        "name": "都市経済",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "基地問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0630kunito2.jpg"
+  },
+  {
+    "id": "tamura-kensuke",
+    "name": "田村 謙介",
+    "kana": "たむら けんすけ",
+    "kaiha": "自由創政",
+    "term_count": 3,
+    "positions": [
+      "副議長"
+    ],
+    "committees": [
+      {
+        "name": "都市経済",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "基地問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407tamura11.jpg"
+  },
+  {
+    "id": "tsukada-yoshimitsu",
+    "name": "塚田 佳充",
+    "kana": "つかだ よしみつ",
+    "kaiha": "無所属",
+    "term_count": 1,
+    "positions": [],
+    "committees": [
+      {
+        "name": "議会運営",
+        "role": "委員",
+        "type": "議会運営"
+      },
+      {
+        "name": "総務政策",
+        "role": "委員長",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407tsukada12.jpg"
+  },
+  {
+    "id": "tsuda-kouichi",
+    "name": "津田 幸一",
+    "kana": "つだ こういち",
+    "kaiha": "公明党議員団",
+    "term_count": 1,
+    "positions": [],
+    "committees": [
+      {
+        "name": "都市経済",
+        "role": "副委員長",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407tsuda13.jpg"
+  },
+  {
+    "id": "tokuda-hirofumi",
+    "name": "徳田 博文",
+    "kana": "とくだ ひろふみ",
+    "kaiha": "公明党議員団",
+    "term_count": 1,
+    "positions": [],
+    "committees": [
+      {
+        "name": "総務政策",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "基地問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407tokuda14.jpg"
+  },
+  {
+    "id": "dokou-hitoshi",
+    "name": "土光 均",
+    "kana": "どこう ひとし",
+    "kaiha": "よなご・未来",
+    "term_count": 3,
+    "positions": [],
+    "committees": [
+      {
+        "name": "総務政策",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "原子力発電・エネルギー問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407doko15.jpg"
+  },
+  {
+    "id": "toda-ryuuji",
+    "name": "戸田 隆次",
+    "kana": "とだ りゅうじ",
+    "kaiha": "自由創政",
+    "term_count": 3,
+    "positions": [],
+    "committees": [
+      {
+        "name": "議会運営",
+        "role": "委員長",
+        "type": "議会運営"
+      },
+      {
+        "name": "総務政策",
+        "role": "委員",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407toda16.jpg"
+  },
+  {
+    "id": "nakada-toshiyuki",
+    "name": "中田 利幸",
+    "kana": "なかだ としゆき",
+    "kaiha": "信風",
+    "term_count": 6,
+    "positions": [],
+    "committees": [
+      {
+        "name": "議会運営",
+        "role": "委員",
+        "type": "議会運営"
+      },
+      {
+        "name": "都市経済",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "原子力発電・エネルギー問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407nakada17.jpg"
+  },
+  {
+    "id": "nishikoori-youko",
+    "name": "錦織 陽子",
+    "kana": "にしこおり ようこ",
+    "kaiha": "日本共産党米子市議団",
+    "term_count": 2,
+    "positions": [],
+    "committees": [
+      {
+        "name": "議会運営",
+        "role": "委員",
+        "type": "議会運営"
+      },
+      {
+        "name": "都市経済",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "基地問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407nishikori18.jpg"
+  },
+  {
+    "id": "nishino-taichi",
+    "name": "西野 太一",
+    "kana": "にしの たいち",
+    "kaiha": "自由創政",
+    "term_count": 1,
+    "positions": [],
+    "committees": [
+      {
+        "name": "都市経済",
+        "role": "委員長",
+        "type": "常任"
+      },
+      {
+        "name": "原子力発電・エネルギー問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407nishino19.jpg"
+  },
+  {
+    "id": "matano-shirou",
+    "name": "又野 史朗",
+    "kana": "またの しろう",
+    "kaiha": "日本共産党米子市議団",
+    "term_count": 2,
+    "positions": [],
+    "committees": [
+      {
+        "name": "民生教育",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "原子力発電・エネルギー問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407matano20.jpg"
+  },
+  {
+    "id": "matsuda-shinya",
+    "name": "松田 真哉",
+    "kana": "まつだ しんや",
+    "kaiha": "よなご・未来",
+    "term_count": 1,
+    "positions": [],
+    "committees": [
+      {
+        "name": "民生教育",
+        "role": "委員長",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407matsuda21.jpg"
+  },
+  {
+    "id": "morita-satoshi",
+    "name": "森田 悟史",
+    "kana": "もりた さとし",
+    "kaiha": "無所属",
+    "term_count": 1,
+    "positions": [],
+    "committees": [
+      {
+        "name": "総務政策",
+        "role": "委員",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407morita22.jpg"
+  },
+  {
+    "id": "moritani-tsukasa",
+    "name": "森谷 司",
+    "kana": "もりたに つかさ",
+    "kaiha": "新ファミリア",
+    "term_count": 2,
+    "positions": [],
+    "committees": [
+      {
+        "name": "都市経済",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "原子力発電・エネルギー問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407moritani23.jpg"
+  },
+  {
+    "id": "yatagai-kaori",
+    "name": "矢田貝 香織",
+    "kana": "やたがい かおり",
+    "kaiha": "公明党議員団",
+    "term_count": 3,
+    "positions": [],
+    "committees": [
+      {
+        "name": "民生教育",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "原子力発電・エネルギー問題等調査特別",
+        "role": "副委員長",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407yatagai24.jpg"
+  },
+  {
+    "id": "yoshioka-koto",
+    "name": "𠮷岡 古都",
+    "kana": "よしおか こと",
+    "kaiha": "よなご・未来",
+    "term_count": 1,
+    "positions": [],
+    "committees": [
+      {
+        "name": "民生教育",
+        "role": "委員",
+        "type": "常任"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407yosuoka25.jpg"
+  },
+  {
+    "id": "watanabe-jouji",
+    "name": "渡辺 穣爾",
+    "kana": "わたなべ じょうじ",
+    "kaiha": "無所属",
+    "term_count": 6,
+    "positions": [],
+    "committees": [
+      {
+        "name": "民生教育",
+        "role": "委員",
+        "type": "常任"
+      },
+      {
+        "name": "予算決算",
+        "role": "委員長",
+        "type": "常任"
+      },
+      {
+        "name": "基地問題等調査特別",
+        "role": "委員",
+        "type": "特別"
+      }
+    ],
+    "photo_url": "https://www.city.yonago.lg.jp/secure/8730/0407watanabe26.jpg"
+  }
+]

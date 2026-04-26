@@ -1,0 +1,358 @@
+:root {
+  --bg: #f7f7f8;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --text-muted: #57606a;
+  --border: #d0d7de;
+
+  /* 会派カラー */
+  --kaiha-jiyusosei: #1f6feb;        /* 自由創政: 青 */
+  --kaiha-shinpu:    #2da44e;        /* 信風: 緑 */
+  --kaiha-yonagomirai: #d97706;      /* よなご・未来: 橙 */
+  --kaiha-komei:     #0ea5e9;        /* 公明党議員団: 水色 */
+  --kaiha-mushozoku: #6b7280;        /* 無所属: 灰 */
+  --kaiha-kyosanto:  #cf222e;        /* 日本共産党米子市議団: 赤 */
+  --kaiha-familia:   #8957e5;        /* 新ファミリア: 紫 */
+  --kaiha-default:   #57606a;        /* fallback */
+
+  /* 委員会種別カラー */
+  --committee-jonin:     #1f6feb;    /* 常任: 青 */
+  --committee-tokubetsu: #d97706;    /* 特別: 橙 */
+  --committee-giun:      #2da44e;    /* 議会運営: 緑 */
+
+  /* 議長・副議長アクセント */
+  --position-gold:       #bf8700;    /* 金 */
+
+  /* 当選回数ビュー */
+  --term-color:          #0a3069;    /* 濃紺 */
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: #0969da; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ヘッダー */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 24px 0;
+}
+.site-header h1 { margin: 0 0 4px; font-size: 22px; }
+.site-header .lead { margin: 0 0 8px; color: var(--text-muted); }
+.site-header .meta { margin: 0; font-size: 12px; color: var(--text-muted); }
+
+/* ビュータブ */
+.view-nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.view-tab {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text);
+}
+.view-tab.is-active {
+  background: var(--text);
+  color: var(--surface);
+  border-color: var(--text);
+}
+
+/* 検索バー */
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  max-width: 360px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--surface);
+}
+.search-input:focus {
+  outline: 2px solid #54aeff;
+  outline-offset: -1px;
+  border-color: #54aeff;
+}
+.search-clear {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--text-muted);
+}
+.search-clear:hover {
+  background: #f1f3f5;
+}
+.match-count {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.empty-message {
+  padding: 32px 0;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* メイン */
+main { padding: 24px 0 48px; }
+
+#status { color: var(--text-muted); }
+
+/* 会派グループ */
+.kaiha-group {
+  margin-bottom: 32px;
+}
+.kaiha-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 12px;
+  border-left: 6px solid var(--kaiha-color, var(--kaiha-default));
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+.kaiha-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.kaiha-count {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* 委員会グループ */
+.committee-group {
+  margin-bottom: 32px;
+}
+.committee-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 12px;
+  border-left: 6px solid var(--committee-color, var(--kaiha-default));
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+.committee-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.committee-type-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--committee-color, var(--kaiha-default));
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.committee-count {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.committee-note {
+  margin: -4px 0 12px;
+  padding: 0 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* 当選回数グループ */
+.term-group {
+  margin-bottom: 24px;
+}
+.term-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+.term-label {
+  font-size: 16px;
+  font-weight: 700;
+  min-width: 3em;
+  color: var(--term-color);
+}
+.term-count {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* 議員カード */
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.member-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--kaiha-color, var(--kaiha-default));
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.member-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.member-photo {
+  width: 64px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #eee;
+  flex-shrink: 0;
+}
+.member-name-block { min-width: 0; }
+.member-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.member-kana {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 2px 0 0;
+}
+.member-term {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.member-positions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eef2f6;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.badge.is-position { background: #fff7d6; border-color: #d4ac0d; }
+.badge.is-chair    { background: #ddf4ff; border-color: #54aeff; }
+.badge.is-vice     { background: #f1f8ff; border-color: #bbd6ff; }
+
+.member-committees {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.member-committees li {
+  padding: 2px 0;
+  border-top: 1px dashed var(--border);
+}
+.member-committees li:first-child { border-top: 0; }
+
+/* リンク群(SNS/公式HP)。
+   .member-link-icon 内のコンテンツ(現状は emoji)を SVG に差し替えても
+   レイアウトに影響が出ないよう、サイズと配置は wrapper 側で固定。 */
+.member-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+.member-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #f6f8fa;
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+.member-link:hover,
+.member-link:focus-visible {
+  background: #e6ebf0;
+  border-color: var(--text-muted);
+  outline: none;
+}
+.member-link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 1;
+}
+.member-link-icon > svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* フッター */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  padding: 16px 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.site-footer p { margin: 4px 0; }

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>米子市議会 見える化 | Phase 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>米子市議会 見える化</h1>
+      <p class="lead">議員26人を会派別に俯瞰する(Phase 1)</p>
+      <p class="meta" id="meta">読み込み中...</p>
+    </div>
+  </header>
+
+  <nav class="view-nav">
+    <div class="container">
+      <button class="view-tab is-active" data-view="kaiha">会派</button>
+      <button class="view-tab" data-view="committee">委員会</button>
+      <button class="view-tab" data-view="role">役職</button>
+      <button class="view-tab" data-view="term">当選回数</button>
+      <div class="search-row">
+        <input
+          type="search"
+          id="search"
+          class="search-input"
+          placeholder="氏名 / ふりがな / 会派 / 委員会 で検索"
+          autocomplete="off"
+        />
+        <button type="button" id="search-clear" class="search-clear" hidden
+          aria-label="検索をクリア">×</button>
+        <span id="match-count" class="match-count"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" id="main">
+    <p id="status">データを読み込み中...</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        出典:
+        <a href="https://www.city.yonago.lg.jp/2919.htm" target="_blank" rel="noopener">
+          米子市公式ホームページ「議員の紹介」
+        </a>
+      </p>
+      <p>このサイトは米子市公式のものではありません。</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
