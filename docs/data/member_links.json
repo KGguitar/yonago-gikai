@@ -1,114 +1,215 @@
 {
   "adachi-takashi": {
     "_name": "安達 卓是",
-    "links": {}
+    "links": {
+      "facebook": "https://www.facebook.com/people/%E5%AE%89%E9%81%94%E5%8D%93%E6%98%AF/100010698784067",
+      "election_dot_com": "https://go2senkyo.com/seijika/148968"
+    }
   },
   "itou-hiroe": {
     "_name": "伊藤 ひろえ",
-    "links": {}
+    "links": {
+      "official_site": "https://hiroeit0729.wixsite.com/website",
+      "twitter": "https://x.com/hiroe_itou",
+      "facebook": "https://www.facebook.com/profile.php?id=100063368432206",
+      "instagram": "https://www.instagram.com/hiroe_ito/",
+      "election_dot_com": "https://go2senkyo.com/seijika/63291"
+    }
   },
   "inata-kiyoshi": {
     "_name": "稲田 清",
-    "links": {}
+    "links": {
+      "blog": "http://inakiyo.cocolog-nifty.com/blog/",
+      "twitter": "https://x.com/inatakiyoshi",
+      "facebook": "https://www.facebook.com/kiyoshi.inata",
+      "election_dot_com": "https://go2senkyo.com/seijika/146376"
+    }
   },
   "imashiro-masako": {
     "_name": "今城 雅子",
-    "links": {}
+    "links": {
+      "official_site": "https://www.komei.or.jp/km/yonago-miyabi/",
+      "twitter": "https://x.com/miyabi88381550",
+      "facebook": "https://www.facebook.com/masako.imasiro",
+      "election_dot_com": "https://go2senkyo.com/seijika/148972"
+    }
   },
   "iwasaki-yasurou": {
     "_name": "岩﨑 康朗",
-    "links": {}
+    "links": {
+      "twitter": "https://x.com/debuya0",
+      "election_dot_com": "https://go2senkyo.com/seijika/63288"
+    }
   },
   "ooshita-tetsuji": {
     "_name": "大下 哲治",
-    "links": {}
+    "links": {
+      "official_site": "https://sites.google.com/view/tetsujioshita",
+      "election_dot_com": "https://go2senkyo.com/seijika/184788"
+    }
   },
   "okada-keisuke": {
     "_name": "岡田 啓介",
     "links": {
-      "official_site": "https://example.com/okada-keisuke",
-      "twitter": "https://x.com/example_okada",
-      "election_dot_com": "https://go2senkyo.com/seijika/example-okada"
+      "blog": "https://ameblo.jp/okada-yonago/",
+      "facebook": "https://www.facebook.com/keisuke.okada.50/?locale=ja_JP",
+      "election_dot_com": "https://go2senkyo.com/seijika/148962"
     }
   },
   "okuiwa-hiroki": {
     "_name": "奥岩 浩基",
-    "links": {}
+    "links": {
+      "facebook": "https://www.facebook.com/profile.php?id=100069151533665",
+      "instagram": "https://www.instagram.com/okuiwahiroki",
+      "election_dot_com": "https://go2senkyo.com/seijika/167568"
+    }
   },
   "kadowaki-kazuo": {
     "_name": "門脇 一男",
-    "links": {}
+    "links": {
+      "blog": "https://kadoyan7.cocolog-nifty.com/kazuo/",
+      "twitter": "https://x.com/kadowaki_kazuo",
+      "facebook": "https://www.facebook.com/kadowaki.kazuo",
+      "instagram": "https://www.instagram.com/kazuo.kadowaki",
+      "election_dot_com": "https://go2senkyo.com/seijika/148970"
+    }
   },
   "kunitou-yasushi": {
     "_name": "国頭 靖",
-    "links": {}
+    "links": {
+      "official_site": "https://kunitoh.com/",
+      "twitter": "https://x.com/gzhfr11irpd2ld6",
+      "facebook": "https://www.facebook.com/y.kunitoh/",
+      "instagram": "https://www.instagram.com/kunitohyasushi",
+      "election_dot_com": "https://go2senkyo.com/seijika/146378"
+    }
   },
   "tamura-kensuke": {
     "_name": "田村 謙介",
     "links": {
-      "official_site": "https://example.com/tamura-kensuke",
-      "facebook": "https://facebook.com/example_tamura",
-      "youtube": "https://youtube.com/@example_tamura"
+      "blog": "https://ameblo.jp/kensuke7jp/",
+      "facebook": "https://www.facebook.com/kensuke.tamura7",
+      "election_dot_com": "https://go2senkyo.com/seijika/146380"
     }
   },
   "tsukada-yoshimitsu": {
     "_name": "塚田 佳充",
-    "links": {}
+    "links": {
+      "facebook": "https://www.facebook.com/profile.php?id=100077246262273",
+      "instagram": "https://www.instagram.com/yosi3tu/",
+      "election_dot_com": "https://go2senkyo.com/seijika/184785"
+    }
   },
   "tsuda-kouichi": {
     "_name": "津田 幸一",
-    "links": {}
+    "links": {
+      "official_site": "https://www.komei.or.jp/km/yonago-tsuda-kouichi/",
+      "facebook": "https://www.facebook.com/profile.php?id=61550631238262&locale=ja_JP",
+      "election_dot_com": "https://go2senkyo.com/seijika/184774"
+    }
   },
   "tokuda-hirofumi": {
     "_name": "徳田 博文",
-    "links": {}
+    "links": {
+      "official_site": "https://www.komei.or.jp/km/yonago-tokuda-hirofumi/",
+      "twitter": "https://x.com/TokudaHirofumi",
+      "instagram": "https://www.instagram.com/tokuda_hirofumi/",
+      "election_dot_com": "https://go2senkyo.com/seijika/184775"
+    }
   },
   "dokou-hitoshi": {
     "_name": "土光 均",
-    "links": {}
+    "links": {
+      "official_site": "https://dokohitoshi.mimoza.jp/",
+      "facebook": "https://www.facebook.com/people/%E5%9C%9F%E5%85%89-%E3%81%B2%E3%81%A8%E3%81%97/100011191418582",
+      "election_dot_com": "https://go2senkyo.com/seijika/148963"
+    }
   },
   "toda-ryuuji": {
     "_name": "戸田 隆次",
-    "links": {}
+    "links": {
+      "election_dot_com": "https://go2senkyo.com/seijika/148967"
+    }
   },
   "nakada-toshiyuki": {
     "_name": "中田 利幸",
-    "links": {}
+    "links": {
+      "official_site": "https://nakadanet.com/",
+      "instagram": "https://www.instagram.com/keisui.nakada/",
+      "election_dot_com": "https://go2senkyo.com/seijika/63298"
+    }
   },
   "nishikoori-youko": {
     "_name": "錦織 陽子",
-    "links": {}
+    "links": {
+      "twitter": "https://x.com/hanatoyoko",
+      "facebook": "https://www.facebook.com/profile.php?id=100023428505451&locale=ja_JP",
+      "instagram": "https://www.instagram.com/minatonoyoko4/",
+      "election_dot_com": "https://go2senkyo.com/seijika/74482"
+    }
   },
   "nishino-taichi": {
     "_name": "西野 太一",
-    "links": {}
+    "links": {
+      "official_site": "https://nishinotaichi.com/",
+      "instagram": "https://www.instagram.com/taichi_nishino_nick/",
+      "election_dot_com": "https://go2senkyo.com/seijika/184789"
+    }
   },
   "matano-shirou": {
     "_name": "又野 史朗",
-    "links": {}
+    "links": {
+      "twitter": "https://x.com/matano46slrou",
+      "facebook": "https://www.facebook.com/profile.php?id=100053237166018",
+      "instagram": "https://www.instagram.com/matano_sirou",
+      "election_dot_com": "https://go2senkyo.com/seijika/167567"
+    }
   },
   "matsuda-shinya": {
     "_name": "松田 真哉",
-    "links": {}
+    "links": {
+      "election_dot_com": "https://go2senkyo.com/seijika/184786"
+    }
   },
   "morita-satoshi": {
     "_name": "森田 悟史",
-    "links": {}
+    "links": {
+      "facebook": "https://www.facebook.com/satoshi.morita.1401/",
+      "instagram": "https://www.instagram.com/morisato726",
+      "youtube": "https://www.youtube.com/channel/UCoxM4n79XTr4JVSFFO3VNzg",
+      "election_dot_com": "https://go2senkyo.com/seijika/184770"
+    }
   },
   "moritani-tsukasa": {
     "_name": "森谷 司",
-    "links": {}
+    "links": {
+      "facebook": "https://www.facebook.com/tsukasa.moritani.5",
+      "election_dot_com": "https://go2senkyo.com/seijika/167552"
+    }
   },
   "yatagai-kaori": {
     "_name": "矢田貝 香織",
-    "links": {}
+    "links": {
+      "official_site": "https://www.komei.or.jp/km/yonago-yatagai/",
+      "twitter": "https://x.com/cclftea8uujha7m",
+      "facebook": "https://www.facebook.com/kaori.yatagai.14",
+      "instagram": "https://www.instagram.com/kaoriyatagai/",
+      "election_dot_com": "https://go2senkyo.com/seijika/148969"
+    }
   },
   "yoshioka-koto": {
     "_name": "𠮷岡 古都",
-    "links": {}
+    "links": {
+      "official_site": "https://yoshiokakoto.com/",
+      "twitter": "https://x.com/kotoyoshioka",
+      "instagram": "https://www.instagram.com/koto_yoshioka/",
+      "election_dot_com": "https://go2senkyo.com/seijika/182563"
+    }
   },
   "watanabe-jouji": {
     "_name": "渡辺 穣爾",
-    "links": {}
+    "links": {
+      "election_dot_com": "https://go2senkyo.com/seijika/63292"
+    }
   }
 }
