@@ -1,0 +1,159 @@
+{
+  "updated_at": "2026-04-27T06:49:28+00:00",
+  "sources": [
+    "info",
+    "iken"
+  ],
+  "items": [
+    {
+      "id": "info-2026-04-24-25797",
+      "date": "2026-04-24",
+      "title": "広報よなご5月号",
+      "url": "https://www.city.yonago.lg.jp/item/25797.htm",
+      "category": "市政情報",
+      "summary": null,
+      "source": "info",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2026-04-10-61373",
+      "date": "2026-04-10",
+      "title": "『よなごっこ未来計画（米子市こども計画）』を改訂しました",
+      "url": "https://www.city.yonago.lg.jp/item/61373.htm",
+      "category": "市民意見募集",
+      "summary": null,
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2026-04-10-60850",
+      "date": "2026-04-10",
+      "title": "米子市こども計画の一部改訂（こども誰でも通園制度に関するもの）に係る意見募集の結果の公表について",
+      "url": "https://www.city.yonago.lg.jp/item/60850.htm",
+      "category": "市民意見募集",
+      "summary": null,
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "info-2026-03-30-27740",
+      "date": "2026-03-30",
+      "title": "米子市職員の給料表の等級及び職制上の段階ごとの職員数説明",
+      "url": "https://www.city.yonago.lg.jp/item/27740.htm",
+      "category": "市政情報",
+      "summary": "4月1日現在の米子市職員の給料表の等級及び職制上の段階ごとの職員数についてお知らせします。",
+      "source": "info",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2026-03-24-61102",
+      "date": "2026-03-24",
+      "title": "米子市国土強靭化地域計画（第2期計画）（素案）へのご意見募集結果を公表します",
+      "url": "https://www.city.yonago.lg.jp/item/61102.htm",
+      "category": "市民意見募集",
+      "summary": "米子市国土強靭化地域計画（第2期計画）（素案）に対するご意見を募集（パブリックコメント）しましたが、ご意見はありませんでした。",
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2026-03-23-61277",
+      "date": "2026-03-23",
+      "title": "第2期米子市再犯防止推進計画（案）への意見募集の結果について",
+      "url": "https://www.city.yonago.lg.jp/item/61277.htm",
+      "category": "市民意見募集",
+      "summary": null,
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "info-2026-03-18-61185",
+      "date": "2026-03-18",
+      "title": "令和8年度補正予算（補正第1回） 市長査定状況",
+      "url": "https://www.city.yonago.lg.jp/item/61185.htm",
+      "category": "市政情報",
+      "summary": null,
+      "source": "info",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "info-2026-03-02-61042",
+      "date": "2026-03-02",
+      "title": "令和8年度当初予算の概要をお知らせします。",
+      "url": "https://www.city.yonago.lg.jp/item/61042.htm",
+      "category": "市政情報",
+      "summary": "令和8年度当初予算の概要を説明します。",
+      "source": "info",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "info-2026-02-26-61028",
+      "date": "2026-02-26",
+      "title": "令和8年米子市議会3月定例会議案",
+      "url": "https://www.city.yonago.lg.jp/item/61028.htm",
+      "category": "市政情報",
+      "summary": null,
+      "source": "info",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2026-02-18-60937",
+      "date": "2026-02-18",
+      "title": "第2期米子市再犯防止推進計画（案）へのご意見を募集します",
+      "url": "https://www.city.yonago.lg.jp/item/60937.htm",
+      "category": "市民意見募集",
+      "summary": null,
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2026-02-18-60829",
+      "date": "2026-02-18",
+      "title": "米子市国土強靭化地域計画（見直し案）へのご意見を募集します",
+      "url": "https://www.city.yonago.lg.jp/item/60829.htm",
+      "category": "市民意見募集",
+      "summary": "米子市国土強靭化地域計画（第2期計画）（案）へのご意見を募集します。",
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2026-01-27-60778",
+      "date": "2026-01-27",
+      "title": "第5次米子市一般廃棄物処理基本計画（案）に対する意見募集結果",
+      "url": "https://www.city.yonago.lg.jp/item/60778.htm",
+      "category": "市民意見募集",
+      "summary": "意見募集の結果と、ご意見に対する市の考え方をお知らせします。",
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2025-12-22-60496",
+      "date": "2025-12-22",
+      "title": "「米子市における部落差別をはじめあらゆる差別をなくする条例」改正素案に対する意見募集の結果について",
+      "url": "https://www.city.yonago.lg.jp/item/60496.htm",
+      "category": "市民意見募集",
+      "summary": null,
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2025-12-16-60175",
+      "date": "2025-12-16",
+      "title": "米子市こども計画の一部改訂（こども誰でも通園制度に関するもの）に係るご意見を募集します",
+      "url": "https://www.city.yonago.lg.jp/item/60175.htm",
+      "category": "市民意見募集",
+      "summary": "米子市こども計画の一部改訂（こども誰でも通園制度に関するもの）に係る意見公募（パブリックコメント）を行います。",
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    },
+    {
+      "id": "iken-2025-10-01-59759",
+      "date": "2025-10-01",
+      "title": "「米子市における部落差別をはじめあらゆる差別をなくする条例」改正素案へのご意見を募集します",
+      "url": "https://www.city.yonago.lg.jp/item/59759.htm",
+      "category": "市民意見募集",
+      "summary": null,
+      "source": "iken",
+      "scraped_at": "2026-04-27T06:49:23+00:00"
+    }
+  ]
+}

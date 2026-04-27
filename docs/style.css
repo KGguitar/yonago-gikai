@@ -25,6 +25,11 @@
 
   /* 当選回数ビュー */
   --term-color:          #0a3069;    /* 濃紺 */
+
+  /* 新着ビュー(ソース別カラー) */
+  --news-info-color:     #1f6feb;    /* 市政情報: 青 */
+  --news-iken-color:     #d97706;    /* 市民意見募集: 橙(将来用) */
+  --news-kokuji-color:   #cf222e;    /* 告示・公示等: 赤(将来用) */
 }
 
 * { box-sizing: border-box; }
@@ -130,6 +135,96 @@ a { color: #0969da; }
   padding: 32px 0;
   text-align: center;
   color: var(--text-muted);
+}
+
+/* 新着ビュー */
+.news-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.news-filter-chip {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--text);
+  font-family: inherit;
+  line-height: 1.5;
+}
+.news-filter-chip:hover {
+  background: #f1f3f5;
+}
+.news-filter-chip.is-active {
+  background: var(--news-color, var(--text));
+  color: #fff;
+  border-color: var(--news-color, var(--text));
+}
+.news-filter-chip[data-source="info"]   { --news-color: var(--news-info-color); }
+.news-filter-chip[data-source="iken"]   { --news-color: var(--news-iken-color); }
+.news-filter-chip[data-source="kokuji"] { --news-color: var(--news-kokuji-color); }
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.news-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--news-color, var(--news-info-color));
+  border-radius: 6px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s, border-color 0.15s;
+}
+.news-card:hover,
+.news-card:focus-visible {
+  background: #f6f8fa;
+  outline: none;
+}
+.news-card[data-source="info"]   { --news-color: var(--news-info-color); }
+.news-card[data-source="iken"]   { --news-color: var(--news-iken-color); }
+.news-card[data-source="kokuji"] { --news-color: var(--news-kokuji-color); }
+
+.news-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.news-date {
+  font-variant-numeric: tabular-nums;
+}
+.news-category {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--news-color, var(--news-info-color));
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.news-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.45;
+  color: var(--text);
+}
+.news-summary {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
 }
 
 /* メイン */

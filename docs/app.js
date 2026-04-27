@@ -66,6 +66,8 @@
     members: [],
     meta: null,
     links: {},
+    news: null,
+    activeSources: new Set(), // 新着ビューで表示するソース。news ロード時に全選択で初期化
     view: "kaiha",
     query: "",
   };
@@ -86,6 +88,38 @@
       node.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
     }
     return node;
+  }
+
+  function matchesNewsItem(item, query) {
+    if (!query) return true;
+    const q = query.toLowerCase();
+    const fields = [
+      item.title || "",
+      item.summary || "",
+      item.category || "",
+    ];
+    return fields.some((f) => f.toLowerCase().includes(q));
+  }
+
+  function filteredNewsItems() {
+    if (!state.news || !Array.isArray(state.news.items)) return [];
+    let items = state.news.items;
+    items = items.filter((it) => state.activeSources.has(it.source));
+    const q = state.query.trim();
+    if (q) items = items.filter((it) => matchesNewsItem(it, q));
+    return items;
+  }
+
+  function getSourceCategoryMap() {
+    const map = new Map();
+    if (!state.news || !Array.isArray(state.news.items)) return map;
+    // 出現順を維持(news.json は日付降順だが、ソース別の最初の出現順でチップ表示)
+    for (const it of state.news.items) {
+      if (it.source && it.category && !map.has(it.source)) {
+        map.set(it.source, it.category);
+      }
+    }
+    return map;
   }
 
   function matchesQuery(member, query) {
@@ -401,9 +435,24 @@
     }
   }
 
-  function renderMeta(meta, members) {
+  function renderMeta() {
     const node = document.getElementById("meta");
     if (!node) return;
+    if (state.view === "news") {
+      const news = state.news;
+      if (!news) {
+        node.textContent = "新着情報を読み込めませんでした";
+        return;
+      }
+      const fetched = news.updated_at
+        ? new Date(news.updated_at).toLocaleString("ja-JP")
+        : "?";
+      const count = (news.items && news.items.length) || 0;
+      node.textContent = `新着 ${count} 件 / 最終取得 ${fetched}`;
+      return;
+    }
+    const meta = state.meta;
+    const members = state.members;
     if (!meta) {
       node.textContent = `現在 ${members.length} 人を表示`;
       return;
@@ -417,6 +466,18 @@
   function updateMatchCount(filteredCount) {
     const node = document.getElementById("match-count");
     if (!node) return;
+    if (state.view === "news") {
+      const total =
+        state.news && Array.isArray(state.news.items)
+          ? state.news.items.length
+          : 0;
+      if (filteredCount !== total) {
+        node.textContent = `${total}件中 ${filteredCount}件を表示`;
+      } else {
+        node.textContent = "";
+      }
+      return;
+    }
     const total = state.members.length;
     if (state.query.trim()) {
       node.textContent = `${total}人中 ${filteredCount}人を表示`;
@@ -425,8 +486,119 @@
     }
   }
 
+  function updateSearchPlaceholder() {
+    const input = document.getElementById("search");
+    if (!input) return;
+    input.placeholder =
+      state.view === "news"
+        ? "タイトル / 概要 / カテゴリ で検索"
+        : "氏名 / ふりがな / 会派 / 委員会 で検索";
+  }
+
+  function renderNewsCard(item) {
+    return el(
+      "a",
+      {
+        class: "news-card",
+        href: item.url,
+        target: "_blank",
+        rel: "noopener",
+        "data-source": item.source || "",
+      },
+      [
+        el("div", { class: "news-meta-row" }, [
+          el(
+            "time",
+            { class: "news-date", datetime: item.date },
+            item.date,
+          ),
+          el("span", { class: "news-category" }, item.category || ""),
+        ]),
+        el("h3", { class: "news-title" }, item.title || "(無題)"),
+        item.summary
+          ? el("p", { class: "news-summary" }, item.summary)
+          : null,
+      ],
+    );
+  }
+
+  function renderNewsView(root) {
+    root.innerHTML = "";
+    const news = state.news;
+    if (!news || !Array.isArray(news.items)) {
+      root.appendChild(
+        el(
+          "p",
+          { class: "empty-message" },
+          "新着情報を読み込めませんでした。",
+        ),
+      );
+      return;
+    }
+
+    // カテゴリフィルタチップ
+    const sourceCategoryMap = getSourceCategoryMap();
+    if (sourceCategoryMap.size > 0) {
+      const chips = [];
+      for (const [source, category] of sourceCategoryMap) {
+        const isActive = state.activeSources.has(source);
+        const chip = el(
+          "button",
+          {
+            class: `news-filter-chip${isActive ? " is-active" : ""}`,
+            "data-source": source,
+            type: "button",
+            "aria-pressed": isActive ? "true" : "false",
+          },
+          category,
+        );
+        chip.addEventListener("click", () => {
+          if (state.activeSources.has(source)) {
+            state.activeSources.delete(source);
+          } else {
+            state.activeSources.add(source);
+          }
+          render();
+        });
+        chips.push(chip);
+      }
+      root.appendChild(el("div", { class: "news-filters" }, chips));
+    }
+
+    const filtered = filteredNewsItems();
+    if (filtered.length === 0) {
+      const isFiltering =
+        state.query.trim() !== "" ||
+        state.activeSources.size < sourceCategoryMap.size;
+      root.appendChild(
+        el(
+          "p",
+          { class: "empty-message" },
+          isFiltering
+            ? "条件に一致する新着情報はありません。"
+            : "新着情報はありません。",
+        ),
+      );
+      return;
+    }
+    root.appendChild(
+      el("div", { class: "news-list" }, filtered.map(renderNewsCard)),
+    );
+  }
+
   function render() {
     const main = document.getElementById("main");
+    document.body.classList.toggle("is-news-view", state.view === "news");
+    updateSearchPlaceholder();
+    renderMeta();
+
+    if (state.view === "news") {
+      const filteredNews = filteredNewsItems();
+      updateMatchCount(filteredNews.length);
+      renderNewsView(main);
+      return;
+    }
+
     const filtered = filteredMembers();
     updateMatchCount(filtered.length);
 
@@ -482,16 +654,25 @@
   async function load() {
     const status = document.getElementById("status");
     try {
-      const [membersRes, metaRes, linksRes] = await Promise.all([
+      const [membersRes, metaRes, linksRes, newsRes] = await Promise.all([
         fetch("./data/members.json", { cache: "no-cache" }),
         fetch("./data/meta.json", { cache: "no-cache" }),
         fetch("./data/member_links.json", { cache: "no-cache" }),
+        fetch("./data/news.json", { cache: "no-cache" }),
       ]);
       if (!membersRes.ok) throw new Error(`members.json: ${membersRes.status}`);
       state.members = await membersRes.json();
       state.meta = metaRes.ok ? await metaRes.json() : null;
       state.links = linksRes.ok ? await linksRes.json() : {};
-      renderMeta(state.meta, state.members);
+      state.news = newsRes.ok ? await newsRes.json() : null;
+      // 初期状態: 全ソースをアクティブに
+      if (state.news && Array.isArray(state.news.items)) {
+        state.activeSources = new Set(
+          state.news.items
+            .map((it) => it.source)
+            .filter((s) => typeof s === "string" && s),
+        );
+      }
       render();
     } catch (err) {
       console.error(err);
